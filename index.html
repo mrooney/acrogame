@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/acrogame.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!--[if lt IE 9]>
@@ -23,9 +25,9 @@
 
           <h3>Your next pose is:</h3>
           <div class="clearfix">
-              <h1 style="float:left">Straddle Bat</h1>
+              <h1 style="float:left" class="pose-name">click button to start &#8594;</h1>
               <ul style="float:right">
-                  <li><a href="https://github.com/mrooney/acrogame">Nailed it! <strong>Next Pose</strong></a></li>
+                  <li><a href="#" class="next-pose">Nailed it! <strong>Next Pose</strong></a></li>
               </ul>
           </div>
 
@@ -34,6 +36,8 @@
               This is basically acroyoga twister: a pose will be chosen randomly and announced!
               For extra challenge, try to move between them directly if possible, or with as few intermediary steps as possible.
           </p>
+
+          <!--TODO: use voice to announce poses, use voice recog "nailed it!" to advance, checkboxes for pops, bad sides, and voice announcer -->
           
       </section>
     </div>
@@ -42,5 +46,8 @@
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script>
+        $(function() { game.init(); })
+    </script>
   </body>
 </html>
