@@ -35,8 +35,8 @@ game.next = function() {
         if (Math.floor(Math.random()*8) === 0) { pose += ' on your bad side'; }
     }
     game.started = true;
+    pose = pose.replace('pashi', 'poshy').replace('bow', 'boe').replace('monolimb', 'mono limb').replace('vashistasana', 'vosheestasana');
     var msg = new SpeechSynthesisUtterance(prefix + ' ' + pose);
-    msg = msg.replace('pashi', 'poshy').replace('bow', 'boe').replace('monolimb', 'mono limb').replace('vashistasana', 'vosheestasana');
     window.speechSynthesis.speak(msg);
 }
 
