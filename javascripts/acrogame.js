@@ -22,7 +22,9 @@ game.init = function() {
         //recognition.onerror = function(event) { ... }
         //recognition.onend = function() { ... }
         recognition.start();
+        $('p.voice-control').html('<strong>Voice Control:</strong> after accepting the microphone prompt above, you can simply shout "nailed it!" to trigger the next pose.');
     }
+    $('p.voice-control').show();
 }
 
 game.random = function(arr) {
