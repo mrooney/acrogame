@@ -97,4 +97,4 @@ hold the throne
 mermaid
 lotus throne
 side dancer
-*/}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].split('\n').slice(1,-1);
+*/}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '').split('\n').slice(1,-1);
