@@ -1,6 +1,4 @@
-game = {
-    started: false,
-}
+game = {}
 
 game.init = function() {
     $('a.next-pose').on('click', game.next);
@@ -18,9 +16,6 @@ game.init = function() {
               }
             }
         }
-        //recognition.onstart = function() { ... }
-        //recognition.onerror = function(event) { ... }
-        //recognition.onend = function() { ... }
         recognition.start();
         $('p.voice-control').html('<strong>Voice Control:</strong> after accepting the microphone prompt above, you can simply shout "nailed it!" to trigger the next pose.');
     }
