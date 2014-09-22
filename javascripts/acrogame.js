@@ -31,8 +31,8 @@ game.next = function() {
     $('.pose-name').text(pose);
     var prefix = game.started ? game.random(game.prefixes) : 'start in';
     if (game.started) {
-        if (Math.floor(Math.random()*8) === 0) { pose += ' using a pop'; }
-        if (Math.floor(Math.random()*8) === 0) { pose += ' on your bad side'; }
+        if (Math.floor(Math.random()*10) === 0) { pose += ' using a pop'; }
+        if (Math.floor(Math.random()*10) === 0) { pose += ' on your bad side'; }
     }
     game.started = true;
     pose = pose.replace('pashi', 'poshy').replace('bow', 'boe').replace('monolimb', 'mono limb').replace('vashistasana', 'vosheestasana');
