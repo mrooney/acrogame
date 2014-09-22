@@ -4,6 +4,25 @@ game = {
 
 game.init = function() {
     $('a.next-pose').on('click', game.next);
+    if ('webkitSpeechRecognition' in window) {
+        var recognition = new webkitSpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.onresult = function(event) {
+            for (var i = event.resultIndex; i < event.results.length; ++i) {
+              if (event.results[i].isFinal) {
+                console.log(event.results[i][0].transcript);
+                if (event.results[i][0].transcript.toLowerCase().indexOf('nailed it') !== -1) {
+                    game.next();
+                }
+              }
+            }
+        }
+        //recognition.onstart = function() { ... }
+        //recognition.onerror = function(event) { ... }
+        //recognition.onend = function() { ... }
+        recognition.start();
+    }
 }
 
 game.random = function(arr) {
