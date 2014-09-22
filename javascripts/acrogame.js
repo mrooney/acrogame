@@ -33,8 +33,12 @@ game.random = function(arr) {
 
 game.next = function() {
     var pose = game.random(game.poses);
-    var prefix = game.started ? game.random(game.prefixes) : 'start in';
     $('.pose-name').text(pose);
+    var prefix = game.started ? game.random(game.prefixes) : 'start in';
+    if (game.started) {
+        if (Math.floor(Math.random()*8) === 0) { pose += ' using a pop'; }
+        if (Math.floor(Math.random()*8) === 0) { pose += ' on your bad side'; }
+    }
     game.started = true;
     var msg = new SpeechSynthesisUtterance(prefix + ' ' + pose);
     window.speechSynthesis.speak(msg);
