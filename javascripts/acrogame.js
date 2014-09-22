@@ -1,7 +1,7 @@
 game = {}
 
 game.init = function() {
-    $('a.next-pose').on('click', game.next);
+    $('a.next-pose').on('click', function(e) { e.preventDefault(); game.next() });
     if ('webkitSpeechRecognition' in window) {
         var recognition = new webkitSpeechRecognition();
         recognition.continuous = true;
@@ -17,7 +17,7 @@ game.init = function() {
             }
         }
         recognition.start();
-        $('p.voice-control').html('<strong>Voice Control:</strong> after accepting the microphone prompt above, you can simply shout "nailed it!" to trigger the next pose.');
+        $('p.voice-control').html('<strong>Voice control:</strong> after accepting the microphone prompt above, you can simply shout "nailed it!" to trigger the next pose.');
     }
     $('p.voice-control').show();
 }
