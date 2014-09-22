@@ -18,6 +18,18 @@ body {
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
 .wrapper {
   width: 640px;
   margin: 0 auto;
@@ -97,14 +109,12 @@ header p.view a {
 header p.view small {
   font-weight: 400;
 }
-header ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  right: 20px;
-  top: 20px;
   height: 38px;
   padding: 1px 0;
   background: #5198DF;
@@ -120,7 +130,7 @@ header ul {
   box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
   width: auto;
 }
-header ul:before {
+ul:before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -138,24 +148,24 @@ header ul:before {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
 }
-header ul li {
+ul li {
   width: 79px;
   float: left;
   border-right: 1px solid #3A7CBE;
   height: 38px;
 }
-header ul li.single {
+ul li.single {
   border: none;
 }
-header ul li + li {
+ul li + li {
   width: 78px;
   border-left: 1px solid #8BBEF3;
 }
-header ul li + li + li {
+ul li + li + li {
   border-right: none;
   width: 79px;
 }
-header ul a {
+ul a {
   line-height: 1;
   font-size: 11px;
   color: #fff;
@@ -167,7 +177,7 @@ header ul a {
   height: 40px;
   text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
 }
-header ul a strong {
+ul a strong {
   font-size: 14px;
   display: block;
   color: #fff;
@@ -337,7 +347,7 @@ footer p + p {
   }
 }
 @media print, screen and (max-width:580px) {
-  header ul {
+  ul {
     display: none;
   }
 
