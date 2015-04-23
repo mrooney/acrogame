@@ -98,7 +98,8 @@ butterfly knife
 dancer
 vishnu's couch
 cathedral candle
-tabletop
+tabletop from straddle bat
+tabletop from folded leaf
 high tabletop
 high offering to the gods
 hold the throne
@@ -128,6 +129,7 @@ catherine's wheel
 reverse catherine's wheel
 maha catherine's wheel
 swimming mermaid
+couch surfer
 whip
 muff dive
 muff diving mermaid
@@ -154,8 +156,9 @@ pop star to reverse bird
 flying squirrel pop
 pogo
 reverse pogo
-elevator
-russian roll
+calf pop to two high
+rock & pop to two high
+inlocate to shoulders
 standing double tempo thigh stand
 standing flag
 standing camel
@@ -165,3 +168,17 @@ standing high bird
 flyer higher bird
 flyer higher foot to hand
 */}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '').split('\n').slice(1,-1);
+
+/* and eventually
+pancake
+reverse pancake
+inlocate to hand to hand
+pop l-sit to reverse hand to hand
+pop throne to reverse hand to hand
+pop straddle bat to hande to hand
+elevator
+reverse elevator
+russian roll
+pop bird to throne no hands
+pop throne to bird no hands
+*/

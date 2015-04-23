@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Let's play the acro game</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/acrogame.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Welcome to the acro game. Let's play!</h1>
+        <p></p>
+      </header>
+      <section>
+          <h3>Your poses are:</h3>
+          <div class="poses"></div>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/mrooney/acrogame/">mrooney</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script>
+        $(function() {
+          var add_pose = function() {
+            var random = Math.floor(Math.random()*game.poses.length);
+            var pose = game.poses.splice(random, 1);
+            $('.poses').append('<p>'+pose+'</p>');
+          }
+          for (var i=0; i<5; i++) {
+            add_pose();
+          }
+          $('.poses').on('click', 'p', function() {
+            $(this).remove();
+            add_pose();
+          });
+        })
+    </script>
+  </body>
+</html>
