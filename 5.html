@@ -33,17 +33,22 @@
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script>
         $(function() {
-          var add_pose = function() {
+          var add_pose = function(after) {
             var random = Math.floor(Math.random()*game.poses.length);
             var pose = game.poses.splice(random, 1);
-            $('.poses').append('<p>'+pose+'</p>');
+            if (after) {
+              $('<p>'+pose+'</p>').insertAfter(after);
+            } else {
+              $('.poses').append('<p>'+pose+'</p>');
+            }
+
           }
           for (var i=0; i<5; i++) {
             add_pose();
           }
           $('.poses').on('click', 'p', function() {
+            add_pose($(this));
             $(this).remove();
-            add_pose();
           });
         })
     </script>
