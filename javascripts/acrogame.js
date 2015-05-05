@@ -53,7 +53,6 @@ throne in hands
 easy throne
 whale
 throne in hands
-bird in hands
 folded leaf
 candlestick
 shoulder stand
@@ -167,6 +166,18 @@ standing straddle pike
 standing high bird
 flyer higher bird
 flyer higher foot to hand
+run to foot to hand
+pop throne to reverse hand to hand
+backfly pike to hand to hand
+russian roll
+floating paschi to shoulder stand
+flag to two high
+flag to hand stand on things
+pop bird to throne no hands
+pop throne to bird no hands
+jump to high bird
+elevator
+back plank to back tuck exit
 */}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '').split('\n').slice(1,-1);
 
 /* and eventually
@@ -174,11 +185,6 @@ pancake
 reverse pancake
 inlocate to hand to hand
 pop l-sit to reverse hand to hand
-pop throne to reverse hand to hand
-pop straddle bat to hande to hand
-elevator
+pop straddle bat to hand to hand
 reverse elevator
-russian roll
-pop bird to throne no hands
-pop throne to bird no hands
 */
