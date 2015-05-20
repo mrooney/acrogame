@@ -90,6 +90,7 @@ cross
 reverse bird
 pashi on thighs
 easy camel
+shin to hands
 floating camel
 thinker
 flamingo
