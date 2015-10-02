@@ -10,14 +10,17 @@ game.init = function() {
             for (var i = event.resultIndex; i < event.results.length; ++i) {
               if (event.results[i].isFinal) {
                 console.log(event.results[i][0].transcript);
-                if (event.results[i][0].transcript.toLowerCase().indexOf('nailed it') !== -1) {
-                    game.next();
-                }
+                $.each(['next please', 'no thanks'], function(index, command) {
+                  if (event.results[i][0].transcript.toLowerCase().indexOf(command) !== -1) {
+                      game.next();
+                      return false;
+                  }
+                });
               }
             }
         }
         recognition.start();
-        $('p.voice-control').html('<strong>Voice control:</strong> after accepting the microphone prompt above, you can simply shout "nailed it!" to trigger the next pose.');
+        $('p.voice-control').html('<strong>Voice control:</strong> after accepting the microphone prompt above, you can simply shout "next please!" to trigger the next pose.');
     }
     $('p.voice-control').show();
 }
