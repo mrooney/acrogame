@@ -348,7 +348,6 @@ footer p + p {
 }
 @media print, screen and (max-width:580px) {
   ul {
-    display: none;
   }
 
   header p.view {
