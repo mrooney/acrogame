@@ -19,7 +19,7 @@ game.init = function() {
               }
             }
         }
-        recognition.onend() = function() {
+        recognition.onend = function() {
           recognition.start();
         }
         recognition.start();
