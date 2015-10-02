@@ -19,6 +19,9 @@ game.init = function() {
               }
             }
         }
+        recognition.onend() = function() {
+          recognition.start();
+        }
         recognition.start();
         $('p.voice-control').html('<strong>Voice control:</strong> after accepting the microphone prompt above, you can simply shout "next please!" to trigger the next pose.');
     }
