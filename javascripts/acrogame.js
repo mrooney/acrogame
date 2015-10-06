@@ -47,145 +47,145 @@ game.next = function() {
 }
 
 game.prefixes = ['go to', 'now try', 'how about', 'can you get to', 'what about', 'next is']
-game.poses = (function () {/*
-bird
-bird in hands
-bow
-bow in hands
-shin to foot
-foot to shin
-throne
-throne in hands
-easy throne
-whale
-throne in hands
-folded leaf
-candlestick
-shoulder stand
-reverse shoulder stand
-super free shoulder stand
-super free reverse shoulder stand
-straddle bat
-baby bat
-floating pashi
-vashistasana
-star
-side star
-inside side star
-reverse star
-reverse star monolimb
-free star
-reverse free star
-backbend
-back plank
-back bow
-reverse candlestick
-reverse vashistasana
-side bird
-hammock
-reverse throne
-reverse throne in hands
-box
-high foot to hand
-low foot to hand
-reverse high foot to hand
-reverse low foot to hand
-foot to foot
-reverse foot to foot
-cross
-reverse bird
-pashi on thighs
-easy camel
-shin to hands
-floating camel
-thinker
-flamingo
-butterfly knife
-dancer
-vishnu's couch
-cathedral candle
-tabletop from straddle bat
-tabletop from folded leaf
-high tabletop
-high offering to the gods
-hold the throne
-mermaid
-lotus throne
-side dancer
-helicopter
-star to bird
-star to reverse bird
-chameleon
-numchucks
-pickpocket
-four step
-three step
-tangled web
-skipping stone
-rotisserie
-revolution
-ninja star
-seattle ninja star
-hip pop ninja star
-high ninja star
-propeller
-rotor
-barrel roll
-catherine's wheel
-reverse catherine's wheel
-maha catherine's wheel
-swimming mermaid
-couch surfer
-whip
-muff dive
-muff diving mermaid
-muff diving shirley temple
-thoughtful king
-whirlygig
-reverse star to cross
-reverse star to bird in hands
-monkey frog
-spider roll
-hot seat pop
-pop straddle bat to star
-pop star to straddle bat
-pop bird to throne
-pop throne to bird
-pop whale to throne
-pop whale to high foot to hand
-star pop to foot to hand
-queen of hearts
-pop throne to foot to hand
-pop reverse throne to reverse foot to hand
-pop backfly to star
-pop star to reverse bird
-flying squirrel pop
-pogo
-reverse pogo
-calf pop to two high
-rock & pop to two high
-inlocate to shoulders
-standing double tempo thigh stand
-standing flag
-standing camel
-standing one-handed camel
-standing straddle pike
-standing high bird
-flyer higher bird
-flyer higher foot to hand
-run to foot to hand
-pop throne to reverse hand to hand
-backfly pike to hand to hand
-russian roll
-floating paschi to shoulder stand
-flag to two high
-flag to hand stand on things
-pop bird to throne no hands
-pop throne to bird no hands
-jump to high bird
-elevator
-back plank to back tuck exit
-*/}).toString().replace(/^[^\/]+\/\*!?/, '').replace(/\*\/[^\/]+$/, '').split('\n').slice(1,-1);
+game.poses = [
+'bird',
+'bird in hands',
+'bow',
+'bow in hands',
+'shin to foot',
+'foot to shin',
+'throne',
+'throne in hands',
+'easy throne',
+'whale',
+'throne in hands',
+'folded leaf',
+'candlestick',
+'shoulder stand',
+'reverse shoulder stand',
+'super free shoulder stand',
+'super free reverse shoulder stand',
+'straddle bat',
+'baby bat',
+'floating pashi',
+'vashistasana',
+'star',
+'side star',
+'inside side star',
+'reverse star',
+'reverse star monolimb',
+'free star',
+'reverse free star',
+'backbend',
+'back plank',
+'back bow',
+'reverse candlestick',
+'reverse vashistasana',
+'side bird',
+'hammock',
+'reverse throne',
+'reverse throne in hands',
+'box',
+'high foot to hand',
+'low foot to hand',
+'reverse high foot to hand',
+'reverse low foot to hand',
+'foot to foot',
+'reverse foot to foot',
+'cross',
+'reverse bird',
+'pashi on thighs',
+'easy camel',
+'shin to hands',
+'floating camel',
+'thinker',
+'flamingo',
+'butterfly knife',
+'dancer',
+'vishnu\'s couch',
+'cathedral candle',
+'tabletop from straddle bat',
+'tabletop from folded leaf',
+'high tabletop',
+'high offering to the gods',
+'hold the throne',
+'mermaid',
+'lotus throne',
+'side dancer',
+'helicopter',
+'star to bird',
+'star to reverse bird',
+'chameleon',
+'numchucks',
+'pickpocket',
+'four step',
+'three step',
+'tangled web',
+'skipping stone',
+'rotisserie',
+'revolution',
+'ninja star',
+'seattle ninja star',
+'hip pop ninja star',
+'high ninja star',
+'propeller',
+'rotor',
+'barrel roll',
+'catherine\'s wheel',
+'reverse catherine\'s wheel',
+'maha catherine\'s wheel',
+'swimming mermaid',
+'couch surfer',
+'whip',
+'muff dive',
+'muff diving mermaid',
+'muff diving shirley temple',
+'thoughtful king',
+'whirlygig',
+'reverse star to cross',
+'reverse star to bird in hands',
+'monkey frog',
+'spider roll',
+'hot seat pop',
+'pop straddle bat to star',
+'pop star to straddle bat',
+'pop bird to throne',
+'pop throne to bird',
+'pop whale to throne',
+'pop whale to high foot to hand',
+'star pop to foot to hand',
+'queen of hearts',
+'pop throne to foot to hand',
+'pop reverse throne to reverse foot to hand',
+'pop backfly to star',
+'pop star to reverse bird',
+'flying squirrel pop',
+'pogo',
+'reverse pogo',
+'calf pop to two high',
+'rock & pop to two high',
+'inlocate to shoulders',
+'standing double tempo thigh stand',
+'standing flag',
+'standing camel',
+'standing one-handed camel',
+'standing straddle pike',
+'standing high bird',
+'flyer higher bird',
+'flyer higher foot to hand',
+'run to foot to hand',
+'pop throne to reverse hand to hand',
+'backfly pike to hand to hand',
+'russian roll',
+'floating paschi to shoulder stand',
+'flag to two high',
+'flag to hand stand on things',
+'pop bird to throne no hands',
+'pop throne to bird no hands',
+'jump to high bird',
+'elevator',
+'back plank to back tuck exit',
+]
 
 /* and eventually
 pancake
