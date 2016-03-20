@@ -147,9 +147,9 @@ game.poses = [
 'monkey frog',
 'spider roll',
 'bicep stand',
-'bicep stand on hands'
-'croc'
-'croc on hands'
+'bicep stand on hands',
+'croc',
+'croc on hands',
 'hot seat pop',
 'pop straddle bat to star',
 'pop star to straddle bat',
