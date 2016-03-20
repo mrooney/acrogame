@@ -146,6 +146,10 @@ game.poses = [
 'reverse star to bird in hands',
 'monkey frog',
 'spider roll',
+'bicep stand',
+'bicep stand on hands'
+'croc'
+'croc on hands'
 'hot seat pop',
 'pop straddle bat to star',
 'pop star to straddle bat',
@@ -154,7 +158,7 @@ game.poses = [
 'pop whale to throne',
 'pop whale to high foot to hand',
 'star pop to foot to hand',
-'queen of hearts',
+'king of hearts',
 'pop throne to foot to hand',
 'pop reverse throne to reverse foot to hand',
 'pop backfly to star',
