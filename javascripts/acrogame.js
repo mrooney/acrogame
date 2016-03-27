@@ -28,6 +28,10 @@ game.init = function() {
     $('p.voice-control').show();
 }
 
+game.infinite = function() {
+    setInterval(game.next, 15000);
+}
+
 game.random = function(arr) {
     return arr[Math.floor(Math.random() * arr.length)]
 }
@@ -75,7 +79,7 @@ game.poses = [
 'reverse star',
 'reverse star monolimb',
 'free star',
-'reverse free star',
+'free reverse star',
 'backbend',
 'back plank',
 'back bow',
@@ -136,7 +140,8 @@ game.poses = [
 'maha catherine\'s wheel',
 'swimming mermaid',
 'couch surfer',
-'whip',
+'front whip',
+'back whip',
 'muff dive',
 'muff diving mermaid',
 'muff diving shirley temple',
@@ -150,7 +155,7 @@ game.poses = [
 'bicep stand on hands',
 'croc',
 'croc on hands',
-'hot seat pop',
+'pop reverse bird to backfly',
 'pop straddle bat to star',
 'pop star to straddle bat',
 'pop bird to throne',
@@ -166,6 +171,17 @@ game.poses = [
 'flying squirrel pop',
 'pogo',
 'reverse pogo',
+'pop bird to throne no hands',
+'pop throne to bird no hands',
+]
+
+/* and eventually
+'pop throne to reverse hand to hand',
+'backfly pike to hand to hand',
+'russian roll',
+'floating paschi to shoulder stand',
+'flag to two high',
+'flag to hand stand on things',
 'calf pop to two high',
 'rock & pop to two high',
 'inlocate to shoulders',
@@ -178,20 +194,9 @@ game.poses = [
 'flyer higher bird',
 'flyer higher foot to hand',
 'run to foot to hand',
-'pop throne to reverse hand to hand',
-'backfly pike to hand to hand',
-'russian roll',
-'floating paschi to shoulder stand',
-'flag to two high',
-'flag to hand stand on things',
-'pop bird to throne no hands',
-'pop throne to bird no hands',
-'jump to high bird',
 'elevator',
+'jump to high bird',
 'back plank to back tuck exit',
-]
-
-/* and eventually
 pancake
 reverse pancake
 inlocate to hand to hand
